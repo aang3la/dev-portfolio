@@ -89,9 +89,10 @@ p {
 }
 
 .default-margin {
-  margin-left: 15vw;
+  margin-left: 20vw;
   margin-right: 20vw;
   max-width: 950px;
+  margin: 0 auto;
 }
 
 .underscore {
