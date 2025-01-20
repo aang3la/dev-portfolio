@@ -10,24 +10,24 @@
 		{
 			jobTitle: 'Front-End Developer',
 			company: 'HUBBY eSIM',
-			startDate: '2024-11-01'
+			startDate: '11/2024'
 		},
 		{
 			jobTitle: 'WordPress Developer',
 			company: 'Inventive',
-			startDate: '2024-11-10'
+			startDate: '11/2024'
 		},
 		{
 			jobTitle: 'Web Development Intern',
 			company: 'Moxelle',
-			startDate: '2024-08-01',
-			endDate: '2024-10-30'
+			startDate: '08/2024',
+			endDate: '10/2024'
 		},
 		{
 			jobTitle: 'Digital Marketing Specialist',
 			company: '6Pro Marketing',
-			startDate: '2021-11-01',
-			endDate: '2024-07-31'
+			startDate: '11/2021',
+			endDate: '07/2024'
 		}
 	];
 </script>
@@ -45,7 +45,7 @@
 							{#if job.endDate}
 								- {job.endDate}
 							{:else}
-								- Present
+								- present
 							{/if}
 						</p>
 					</div>
@@ -53,7 +53,7 @@
 			</li>
 		{/each}
 	</ul>
-	<h2 class="headline-m">Past Work <br /> Experience</h2>
+	<h2 class="headline">Past Work <br /> Experience</h2>
 </section>
 
 <style>
