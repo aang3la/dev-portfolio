@@ -1,35 +1,11 @@
 <script lang="ts">
-	interface WorkExperience {
-		jobTitle: string;
-		company: string;
-		startDate: string;
-		endDate?: string;
+    import type { DevExperience } from '$lib/types/sanity';
+
+	interface ExperienceTableProps {
+		workExperience: DevExperience[];
 	}
 
-	const workExperience: WorkExperience[] = [
-		{
-			jobTitle: 'Front-End Developer',
-			company: 'HUBBY eSIM',
-			startDate: '11/2024'
-		},
-		{
-			jobTitle: 'WordPress Developer',
-			company: 'Inventive',
-			startDate: '11/2024'
-		},
-		{
-			jobTitle: 'Web Development Intern',
-			company: 'Moxelle',
-			startDate: '08/2024',
-			endDate: '10/2024'
-		},
-		{
-			jobTitle: 'Digital Marketing Specialist',
-			company: '6Pro Marketing',
-			startDate: '11/2021',
-			endDate: '07/2024'
-		}
-	];
+	const { workExperience }: ExperienceTableProps = $props();
 </script>
 
 <section class="default-margin work-experience mt-m">
@@ -41,9 +17,9 @@
 					<div class="company-and-date">
 						<p>{job.company}</p>
 						<p class="dark-grey">
-							{job.startDate}
+							{job.startDate.slice(0, 7)}
 							{#if job.endDate}
-								- {job.endDate}
+								- {job.endDate.slice(0, 7)}
 							{:else}
 								- present
 							{/if}
