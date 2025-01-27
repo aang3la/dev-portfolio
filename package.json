@@ -31,6 +31,7 @@
 		"vite": "^5.4.11"
 	},
 	"dependencies": {
+		"@sanity/image-url": "^1.1.0",
 		"sanity": "^3.70.0"
 	}
 }

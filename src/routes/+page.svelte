@@ -3,7 +3,7 @@
 
     const { data } = $props();
     let { workExperience } = $derived(data);
-    $inspect(workExperience);
+    // $inspect(workExperience);
 </script>
 
 <HeroSection />

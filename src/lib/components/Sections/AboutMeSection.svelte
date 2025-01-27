@@ -2,10 +2,9 @@
     import { SectionHeadline, Button, ExperienceTable } from '$components';
     import image from '$assets/angela_bnw.jpg';
 	import { goto } from '$app/navigation';
-    import type { DevExperience } from '$lib/types/sanity';
 
     interface AboutMeProps {
-        workExperience: DevExperience[];
+        workExperience: SanityWorkExperience[];
     };
 
     let { workExperience }: AboutMeProps = $props();
@@ -24,7 +23,7 @@
                 Hey! I'm Angela, a web developer based in the North Macedonia. I'm passionate about creating beautiful and functional websites that are easy to use and navigate.
             </p>
             <p>
-                I'm a quick learner and I'm always looking to improve my skills. I haveexperience in React and TypeScript, currently expanding my skill set to include NextJS, Svelte and WordPress development. I'm a team player and I'm always willing to help others.
+                I'm a quick learner and I'm always looking to improve my skills. I have experience in React,TypeScript, NodeJS, and WordPress currently expanding my skill set to include NextJS and SvelteKit. I'm a team player and I'm always willing to help others.
             </p>
             <p>
                Transitioning from a background in digital marketing, I bring a unique blend of technical and user-focused insights to my work, always aiming to create engaging, responsive interfaces. Passionate about clean, efficient code and intuitive design, I’m excited to continue building impactful web experiences.
