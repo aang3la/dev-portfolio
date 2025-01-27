@@ -1,10 +1,11 @@
 <script lang="ts">  
-    import { HeroSection, AboutMeSection } from '$components';
+    import { HeroSection, AboutMeSection, MyWorkSection } from '$components';
 
     const { data } = $props();
-    let { workExperience } = $derived(data);
+    let { workExperience, projects } = $derived(data);
     // $inspect(workExperience);
 </script>
 
 <HeroSection />
 <AboutMeSection {workExperience}/>
+<MyWorkSection {projects}/>
